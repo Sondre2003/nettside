@@ -1,0 +1,227 @@
+
+/* GLOBALT */
+html {
+    scroll-behavior: smooth;
+}
+
+/* GRUNNLEGGENDE STILER */
+p {
+    line-height: 1.6;
+}
+
+
+/* FONTER OG FARGER */
+body {
+    margin: 0;
+    background: #0a0a0a;
+    color: #eaeaea; /* litt mykere enn helt hvit */
+    font-family: "Courier New", monospace;
+
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 1px solid #222;
+}
+
+.hero h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #c084fc; /* lilla */
+}
+
+h1, h2, h3 {
+    font-family: 'Doto', sans-serif;
+}
+
+
+/* SEKSJONER */
+section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #222;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* TITLER */
+h2 {
+    color: #c084fc; /* lilla */
+}
+
+/* CARD (prosjekt) */
+.card {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #c084fc;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #c084fc33;
+    align-items: flex-start;
+    
+}
+
+/* tekst */
+.card-content {
+    flex: 1;
+}
+
+/* bilde */
+.card-image {
+    flex: 1;
+}
+
+.card img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.card:hover {
+    transform: translateY(0px);
+    box-shadow: 0 0 18px #c084fc55;
+}
+
+/* LITEN ACCENT (grønn) */
+.card h3 {
+    color: #00ffcc;
+}
+
+/* LENKER */
+a {
+    color: #eaeaea;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #c084fc;
+}
+
+/* NAVIGASJON */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 10, 0.9);
+    border-bottom: 1px solid #222;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    backdrop-filter: blur(6px);
+}
+
+nav a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-family: 'Doto', sans-serif;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #c084fc;
+}
+
+/* INFO-BLOKK */
+.label {
+    color: #00ffcc;
+    font-family: 'Doto', sans-serif;
+    margin-bottom: 2px;
+}
+
+.info-block p {
+    margin-top: 3px;
+}
+
+
+/* MEDIA-SEKSJON */
+.media-dropdown {
+    margin-top: 20px;
+    border-top: 1px solid #222;
+    padding-top: 12px;
+}
+
+.media-dropdown summary {
+    cursor: pointer;
+    color: #00ffcc;
+    font-family: 'Doto', sans-serif;
+    list-style: none;
+}
+
+.media-dropdown summary:hover {
+    color: #c084fc;
+}
+.media-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.media-dropdown summary::after {
+    content: "▾";
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.media-dropdown[open] summary::after {
+    content: "▴";
+}
+
+.media-gallery {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.media-gallery img,
+.media-gallery video {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.media-gallery video {
+    grid-column: 1 / -1;
+    max-width: 100%;
+}
+
+.projects-dropdown {
+    margin-top: 30px;
+    border-top: 1px solid #222;
+    padding-top: 12px;
+}
+
+.projects-dropdown summary {
+    cursor: pointer;
+    color: #00ffcc;
+    font-family: 'Doto', sans-serif;
+    list-style: none;
+}
+
+.projects-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.projects-dropdown summary::after {
+    content: "▾";
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.projects-dropdown[open] summary::after {
+    content: "▴";
+}
+
+.projects-dropdown summary:hover {
+    color: #c084fc;
+}
+
+.extra-projects {
+    margin-top: 20px;
+}
