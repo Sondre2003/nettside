@@ -250,3 +250,11 @@ nav a:hover {
         flex-wrap: wrap;
     }
 }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}
