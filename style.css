@@ -225,3 +225,28 @@ nav a:hover {
 .extra-projects {
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card-image,
+    .card-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 40px 16px;
+    }
+
+    nav {
+        gap: 15px;
+        padding: 12px 10px;
+        flex-wrap: wrap;
+    }
+}
